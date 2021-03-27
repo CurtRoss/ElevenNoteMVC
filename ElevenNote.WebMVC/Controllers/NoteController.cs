@@ -43,7 +43,7 @@ namespace ElevenNote.WebMVC.Controllers
 
             if (service.CreateNote(model))
             {
-                TempData["SaveResult"] = "Your note was created.";
+                TempData["SaveResult"] = "Your note was created."; //why is this message not showing?
                 return RedirectToAction("Index");
             };
 
